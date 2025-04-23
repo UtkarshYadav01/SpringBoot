@@ -1,0 +1,5 @@
+package com.ucode.main.beans;
+
+public class Student {
+
+}

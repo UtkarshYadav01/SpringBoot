@@ -1,0 +1,128 @@
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.39 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE restful_db;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE restful_db;
+Database changed
+mysql> SHOW TABLES;
+Empty set (0.01 sec)
+
+mysql> SHOW TABLES;
++----------------------+
+| Tables_in_restful_db |
++----------------------+
+| user                 |
++----------------------+
+1 row in set (0.01 sec)
+
+mysql> SELECT * FROM user;
++----+------+---------------+---------------+----------+
+| id | city | email         | name          | password |
++----+------+---------------+---------------+----------+
+|  1 | Agra | Utkarsh@Gmail | Utkarsh Yadav | U123     |
++----+------+---------------+---------------+----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+----------------+----------+
+| id | city       | email         | name           | password |
++----+------------+---------------+----------------+----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav  | U123     |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma   | kamalp   |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary | Amitlp   |
++----+------------+---------------+----------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+-----------------+-----------+
+| id | city       | email         | name            | password  |
++----+------------+---------------+-----------------+-----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav   | U123      |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma    | kamalp    |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary  | Amitlp    |
+|  4 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
++----+------------+---------------+-----------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+-----------------+-----------+
+| id | city       | email         | name            | password  |
++----+------------+---------------+-----------------+-----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav   | U123      |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma    | kamalp    |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary  | Amitpass  |
+|  4 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
++----+------------+---------------+-----------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+----------------+----------+
+| id | city       | email         | name           | password |
++----+------------+---------------+----------------+----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav  | U123     |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma   | kamalp   |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary | Amitpass |
++----+------------+---------------+----------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+----------------+----------+
+| id | city       | email         | name           | password |
++----+------------+---------------+----------------+----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav  | U123     |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma   | kamalp   |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary | Amitpass |
++----+------------+---------------+----------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+-----------------+-----------+
+| id | city       | email         | name            | password  |
++----+------------+---------------+-----------------+-----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav   | U123      |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma    | kamalp    |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary  | Amitpass  |
+|  5 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
++----+------------+---------------+-----------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+-----------------+-----------+
+| id | city       | email         | name            | password  |
++----+------------+---------------+-----------------+-----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav   | U123      |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma    | kamalp    |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary  | Amitpass  |
+|  5 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
+|  6 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
+|  7 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
+|  8 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
++----+------------+---------------+-----------------+-----------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+------------+---------------+-----------------+-----------+
+| id | city       | email         | name            | password  |
++----+------------+---------------+-----------------+-----------+
+|  1 | Agra       | Utkarsh@Gmail | Utkarsh Yadav   | U123      |
+|  2 | Chandigarh | Kamal@Gmail   | Kamal Sharma    | kamalp    |
+|  3 | Banglore   | Amit@Gmail    | Amit Chaudhary  | Amitpass  |
+|  5 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
+|  6 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
+|  8 | Pune       | priya@Gmail   | Priya Chaudhary | priyaroot |
++----+------------+---------------+-----------------+-----------+
+6 rows in set (0.00 sec)
+
+mysql>

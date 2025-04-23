@@ -1,0 +1,9 @@
+package com.ucode.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ucode.entities.Student;
+
+public class StudentRepository implements JpaRepository<Student, Long> {
+
+}

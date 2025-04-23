@@ -1,0 +1,6 @@
+spring.application.name=SpringBootProject5JdbcCrud
+# Database Configuration
+spring.da=com.mysql.cj.jdbc.Driver
+db.url=jdbc:mysql://localhost:3306/spring_jdbc_db
+db.username=root
+db.password=root

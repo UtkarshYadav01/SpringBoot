@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ucode</groupId>
+    <artifactId>Spring-Boot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Spring Boot Parent</name>
+    <description>Parent project to manage all my spring Boot applications in IntelliJ
+    </description>
+
+    <modules>
+        <!-- Add child modules here -->
+        <module>SpringBootProject1</module>
+        <module>SpringBootProject2Web</module>
+        <module>SpringBootProject3RunFromMainClass</module>
+        <module>SpringBootProject4RunFromOtherClass</module>
+        <module>SpringBootProject5SpringBootJdbcCrud</module>
+        <module>SpringBootProject6HibernateCrud</module>
+        <module>SpringBootWithHibernate1</module>
+        <module>SpringBootWithHibernate2</module>
+        <module>SpringBootWithDataJpa1</module>
+        <module>SpringBootWebApp1</module>
+        <module>SpringBootWithThymeleaf</module>
+        <module>SpringBootRegLoginApp</module>
+        <module>SpringBootRestfulWs</module>
+    </modules>
+</project>

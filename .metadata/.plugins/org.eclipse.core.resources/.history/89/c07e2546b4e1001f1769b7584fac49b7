@@ -1,0 +1,28 @@
+package com.ucode.main;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class SpringBootProject1Application {
+
+	public static void main(String[] args) {
+		System.out.println("Application Started...");
+		SpringApplication.run(SpringBootProject1Application.class, args);
+		System.out.println("Application Finished...");
+	}
+	
+	// CommandLineRunner bean to execute some code after application start
+	@Bean
+	public CommandLineRunner run() {
+		return A-> myClass().printMessage("Utkarsh");
+	}
+	
+	@Bean
+	public MyClass myClass() {
+		return new MyClass();
+	}
+
+}

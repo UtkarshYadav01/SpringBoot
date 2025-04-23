@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootProject4" />
+        <module name="SpringBootProject6HibernateCrud" />
+        <module name="SpringBootWithDataJpa1" />
+        <module name="SpringBootRestfulWs" />
+        <module name="SpringBootWithHibernate2" />
+        <module name="SpringBootWithHibernate1" />
+        <module name="SpringBootRegLoginApp" />
+        <module name="SpringBootProject1" />
+        <module name="SpringBootWebApp1" />
+        <module name="SpringBootWithThymeleaf" />
+        <module name="SpringBootProject5SpringBootJdbcCrud" />
+        <module name="SpringBootProject3RunFromMainClass" />
+        <module name="SpringBootProject4RunFromOtherClass" />
+        <module name="SpringBootProject2Web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringBootProject4" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootProject1" options="-parameters" />
+      <module name="SpringBootProject2Web" options="-parameters" />
+      <module name="SpringBootProject3RunFromMainClass" options="-parameters" />
+      <module name="SpringBootProject4" options="" />
+      <module name="SpringBootProject4RunFromOtherClass" options="-parameters" />
+      <module name="SpringBootProject5SpringBootJdbcCrud" options="-parameters" />
+      <module name="SpringBootRegLoginApp" options="-parameters" />
+      <module name="SpringBootRestfulWs" options="-parameters" />
+      <module name="SpringBootWebApp1" options="-parameters" />
+      <module name="SpringBootWithDataJpa1" options="-parameters" />
+      <module name="SpringBootWithHibernate1" options="-parameters" />
+      <module name="SpringBootWithHibernate2" options="-parameters" />
+      <module name="SpringBootWithThymeleaf" options="-parameters" />
+    </option>
+  </component>
+</project>

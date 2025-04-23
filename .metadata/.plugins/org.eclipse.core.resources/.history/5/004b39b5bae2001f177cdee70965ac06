@@ -1,0 +1,12 @@
+package com.ucode.services;
+
+import com.ucode.entities.Student;
+
+public class StudentServiceImp implements StudentService{
+
+	@Override
+	public boolean addStudentDetails(Student std) {
+		return false;
+	}
+
+}

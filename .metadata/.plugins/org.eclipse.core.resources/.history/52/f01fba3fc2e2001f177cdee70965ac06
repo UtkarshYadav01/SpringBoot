@@ -1,0 +1,29 @@
+package com.ucode;
+
+import com.ucode.entities.Student;
+import com.ucode.services.StudentServiceImp;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class SpringBootWithDataJpa1Application {
+
+    public static void main(String[] args) {
+
+        ApplicationContext context = SpringApplication.run(SpringBootWithDataJpa1Application.class, args);
+        StudentServiceImp stdService = context.getBean(StudentServiceImp.class);
+
+        Student student = new Student();
+        student.setName("Utkarsh");
+        student.setRollNo(101);
+        student.setMarks(98.3f);
+
+        boolean b = stdService.addStudentDetails(student);
+        if (b) {
+            System.out.println("######### USER DETAILS ADDED SUCCESSFULLY ########");
+        } else {
+            System.out.println("######### USER DETAILS NOT ADDED DUE TO SOME ERROR ########");
+        }
+    }
+}

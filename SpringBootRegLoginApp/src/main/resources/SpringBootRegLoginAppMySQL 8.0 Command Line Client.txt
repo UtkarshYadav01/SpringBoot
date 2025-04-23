@@ -1,0 +1,116 @@
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 672
+Server version: 8.0.39 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE thymeleaf_reglogindb;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE thymeleaf_reglogindb;
+Database changed
+mysql> SHOW TABLES;
+Empty set (0.01 sec)
+
+mysql> SHOW TABLES;
++--------------------------------+
+| Tables_in_thymeleaf_reglogindb |
++--------------------------------+
+| user                           |
++--------------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM user;
+Empty set (0.01 sec)
+
+mysql> SELECT * FROM user;
++----+-------+------+----------+----------+
+| id | email | name | password | phone_no |
++----+-------+------+----------+----------+
+|  1 | NULL  | NULL | NULL     | NULL     |
++----+-------+------+----------+----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+-------+------+----------+----------+
+| id | email | name | password | phone_no |
++----+-------+------+----------+----------+
+|  1 | NULL  | NULL | NULL     | NULL     |
+|  2 | NULL  | NULL | NULL     | NULL     |
++----+-------+------+----------+----------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+-------+------+----------+----------+
+| id | email | name | password | phone_no |
++----+-------+------+----------+----------+
+|  1 | NULL  | NULL | NULL     | NULL     |
+|  2 | NULL  | NULL | NULL     | NULL     |
+|  3 | NULL  | NULL | NULL     | NULL     |
++----+-------+------+----------+----------+
+3 rows in set (0.00 sec)
+
+mysql> DROP user;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> DROP TABLE user;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SHOW TABLES;
+Empty set (0.00 sec)
+
+mysql> SHOW TABLES;
++--------------------------------+
+| Tables_in_thymeleaf_reglogindb |
++--------------------------------+
+| user                           |
++--------------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+-------+------+----------+----------+
+| id | email | name | password | phone_no |
++----+-------+------+----------+----------+
+|  1 | NULL  | NULL | NULL     | NULL     |
++----+-------+------+----------+----------+
+1 row in set (0.00 sec)
+
+mysql> DROP TABLE user;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SELECT * FROM user;
++----+-------------------+---------------+----------+-------------+
+| id | email             | name          | password | phone_no    |
++----+-------------------+---------------+----------+-------------+
+|  1 | utkarsh@gmail.com | Utkarsh Yadav | pass     | 08979017993 |
++----+-------------------+---------------+----------+-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM user;
++----+-------------------+---------------+----------+-------------+
+| id | email             | name          | password | phone_no    |
++----+-------------------+---------------+----------+-------------+
+|  1 | utkarsh@gmail.com | Utkarsh Yadav | pass     | 08979017993 |
+|  2 | Sa@Mail.in        | Saurabh       | root     | 999999999   |
++----+-------------------+---------------+----------+-------------+
+2 rows in set (0.00 sec)
+
+mysql> select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone_no from user u1_0 where u1_0.email=utkarsh@gmail.com
+;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1
+mysql> select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone_no from user u1_0 where u1_0.email='utkarsh@gmail.co
+m';
++----+-------------------+---------------+----------+-------------+
+| id | email             | name          | password | phone_no    |
++----+-------------------+---------------+----------+-------------+
+|  1 | utkarsh@gmail.com | Utkarsh Yadav | pass     | 08979017993 |
++----+-------------------+---------------+----------+-------------+
+1 row in set (0.00 sec)
+
+mysql>

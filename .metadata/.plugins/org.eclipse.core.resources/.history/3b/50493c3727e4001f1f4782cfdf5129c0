@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+</head>
+<body>
+<h2> Welcome to Thymeleaf tutorial</h2>
+<a href="openProfile">open profile Page</a> <br/><br/>
+<a href="openConditional">open conditional Page</a> <br/><br/>
+</body>
+</html>

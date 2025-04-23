@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+</head>
+
+<body>
+	<h2> Welcome to Thymeleaf tutorial 2 with Spring data jpatttttttttttttttttt</h2>
+
+	<a href="regPage"> Register </a> <br /><br />
+
+	<a href="loginPage"> Login </a> <br /><br />
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+package com.ucode.services;
+
+import com.ucode.entities.Student;
+
+public interface StudentService {
+
+	boolean addStudentDetails(Student std);
+}

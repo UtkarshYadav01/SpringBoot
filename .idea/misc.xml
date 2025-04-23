@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootProject1standAlone/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootProject5JdbcCrud/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootProject6HibernateCrud/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWithHibernate1/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWithHibernate2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWithDataJpa1/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWebApp1/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWithThymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootRegLoginApp/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootRestfulWs/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK" />
+</project>
